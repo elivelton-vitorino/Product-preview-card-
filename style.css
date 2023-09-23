@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+:root {
+
+    --cream:hsl(30, 38%, 92%);
+    --dark-cyan:hsl(158, 36%, 37%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+}
+body {
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.cartao-inicio {
+    background-color: var(--white);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    width: 344px;
+    height: 650px;
+    margin:30px 15px;
+}
+.img {
+    background-image: url(./images/image-product-mobile.jpg);
+    border-radius: 10px 10px 0 0;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 344px;
+}
+.text-content {
+    margin: 20px;
+}
+.parte-2 h2 {
+    color: var(--dark-grayish-blue);
+    font-size: 0.800em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 10px;
+}
+.parte-1 h1 {
+    color: var(--very-dark-blue);
+    font-size: 2em;
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    line-height: 36px;
+   margin: 10px;
+}
+.paragraph p {
+    color: var(--dark-grayish-blue);
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 0.875em;
+    margin: 10px;
+}
+.preco {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    justify-content: start;
+    margin: 10px;
+}
+.preco-baixo {
+    color: var(--dark-cyan);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.preco-alto {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    text-decoration: line-through;
+    font-size: 0.86rem;
+    margin-top:-45px;
+    margin-left:50%
+}
+.botao {
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    border: none;
+    font-size: 0.885rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 7px;
+    width: 300px;
+    height: 45px;
+    align-items: center;
+    cursor: pointer;
+    margin-top: -10%;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 20px;
+}
+.img-botao {
+   margin-right: 10px;
+    
+}
+@media screen and (min-width: 768px) {
+    .cartao-inicio {
+        grid-template-rows: 0;
+        grid-template-columns: repeat(2, 1fr);
+        width: 600px;
+        height: 460px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 200px;
+        margin-bottom: auto;
+    }
+    .img {
+        width: 300px;
+        height: 450px;
+        border: 10px 10px 0 0;
+        margin: 5px;
+        background-image: url(./images/image-product-desktop.jpg);
+    }
+    .parte-1{
+        margin: 40px 30px;
+        max-width: 250px;
+    }
+    .paragraph {
+        margin-right: 35px;
+    }
+    .botao{
+        width: 230px;
+        margin-left:110%;
+        margin-top:130%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .preco-alto {
+        color: var(--dark-grayish-blue);
+        font-weight: 400;
+        text-decoration: line-through;
+        font-size: 0.86rem;
+        margin-top:-40px;
+        margin-left:65%
+    }
+    .parte-2 h2 {
+        color: var(--dark-grayish-blue);
+        font-size: 0.800em;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin-top: -10px;
+    }
+}
